@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "会话回收站",
+    "description": "把对话删进可恢复的回收站，需要时可原样还原；也可以直接粉碎，不在磁盘上留下会话日志。",
+    "detail": "docs/DETAIL.md"
+  },
+  "menu": {
+    "trash": "移入回收站",
+    "purge": "彻底删除…",
+    "open": "回收站"
+  },
+  "panel": {
+    "title": "回收站",
+    "empty": "回收站是空的。",
+    "restore": "还原",
+    "purge": "彻底删除",
+    "emptyAll": "清空回收站",
+    "close": "关闭",
+    "refresh": "刷新",
+    "loading": "加载中…",
+    "session": "会话",
+    "deletedAt": "删除时间",
+    "size": "大小",
+    "workspace": "工作区",
+    "confirmRestore": "还原「{title}」？对话会回到原来的工作区。",
+    "confirmPurge": "彻底删除「{title}」？此操作不可撤销。",
+    "confirmEmpty": "彻底删除回收站里的全部对话？此操作不可撤销。",
+    "busy": "处理中…"
+  },
+  "toast": {
+    "trashed": "已移入回收站",
+    "purged": "已彻底删除",
+    "restored": "已还原"
+  }
+}

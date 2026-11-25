@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "Session trash",
+    "description": "Delete a conversation into a recoverable trash and restore it later, or shred it on the spot without leaving logs.",
+    "detail": "docs/DETAIL.md"
+  },
+  "menu": {
+    "trash": "Move to trash",
+    "purge": "Delete permanently…",
+    "open": "Recycle bin"
+  },
+  "panel": {
+    "title": "Recycle bin",
+    "empty": "The recycle bin is empty.",
+    "restore": "Restore",
+    "purge": "Delete permanently",
+    "emptyAll": "Empty the recycle bin",
+    "close": "Close",
+    "refresh": "Refresh",
+    "loading": "Loading…",
+    "session": "Session",
+    "deletedAt": "Deleted",
+    "size": "Size",
+    "workspace": "Workspace",
+    "confirmRestore": "Restore “{title}”? The conversation returns to its original workspace.",
+    "confirmPurge": "Delete “{title}” permanently? This cannot be undone.",
+    "confirmEmpty": "Permanently delete every conversation in the recycle bin? This cannot be undone.",
+    "busy": "Working…"
+  },
+  "toast": {
+    "trashed": "Moved to the recycle bin",
+    "purged": "Deleted permanently",
+    "restored": "Restored"
+  }
+}

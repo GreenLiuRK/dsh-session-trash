@@ -1,0 +1,5 @@
+# dsh-session-trash bundle layer: one Host row, plus the Client half it ships.
+- insert:
+    - id: dsh-session-trash
+      name: 'dsh-session-trash'
+      config: {}
