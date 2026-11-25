@@ -2,6 +2,8 @@
 
 > 给 DeepSeek Harness 补上**真正能删对话**的能力：删进可恢复的回收站，需要时原样还原；也可以直接粉碎，不给磁盘留会话日志。
 
+**第一次用、或者不想碰命令行？** 看 **[使用教程（一步步点哪里）](使用教程.md)** —— 从安装到误删找回，全是白话。
+
 [![DeepSeek Harness](https://img.shields.io/badge/DeepSeek%20Harness-plugin-1082ff)](https://github.com/deepseek-ai/deepseek-harness)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![node](https://img.shields.io/badge/node-%3E%3D22.15-brightgreen)](package.json)
@@ -34,6 +36,8 @@ DSH 的会话侧栏只有「归档会话」——归档只是把对话藏起来�
 还原时反向执行：目录移回原路径 → 缓存副本放回 → `attachSession` 挂回原工作区 → 清索引。
 
 ## 安装
+
+不想看命令的话，直接跟 [使用教程 · 第三节](使用教程.md#三安装一次性大约-1-分钟) 走。
 
 **插件市场**：搜索 `dsh-session-trash`（发布后）。
 
