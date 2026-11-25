@@ -161,11 +161,17 @@ function git(args, options = {}) {
   return (result.stdout ?? '').trim()
 }
 
+/** Best-effort git call for steps whose absence is not a failure. */
+function gitTry(args) {
+  spawnSync('git', args, { cwd: ROOT, encoding: 'utf8', stdio: 'ignore' })
+}
+
 function push(token, login) {
   const hosted = `https://github.com/${login}/${REPO_NAME}.git`
   const remote = GH_PROXY === '' ? hosted : `${GH_PROXY.replace(/\/$/u, '')}/${hosted}`
   const authenticated = remote.replace('https://', `https://x-access-token:${token}@`)
-  git(['remote', 'remove', 'origin'], { stdio: 'ignore' })
+  // A first publish has no `origin` yet, so removal is best-effort.
+  gitTry(['remote', 'remove', 'origin'])
   git(['remote', 'add', 'origin', remote])
   git(['push', '-u', authenticated, 'HEAD:refs/heads/main'])
   // Keep the token out of .git/config once the push is done.
