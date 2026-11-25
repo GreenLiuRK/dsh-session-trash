@@ -28,7 +28,8 @@
     "locale/*.json",
     "docs",
     "icon.svg",
-    "README.md"
+    "README.md",
+    "scripts"
   ],
   "dsh": {
     "bundle": {
@@ -46,6 +47,7 @@
     "@deepseek-ai/cordis": ">=4.0.0-rc <5"
   },
   "scripts": {
-    "check": "node --check index.js && node --check client.js"
+    "check": "node --check index.js && node --check client.js",
+    "publish:github": "node scripts/publish.mjs"
   }
 }
